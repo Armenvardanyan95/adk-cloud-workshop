@@ -2,16 +2,6 @@ import { FunctionTool } from '@google/adk';
 import { z } from 'zod';
 import { openDb } from '@techparts/shared';
 
-// TODO(workshop): Implement the inventory tools.
-//
-// You are building two tools backed by the SQLite `products` table
-// (columns: sku, name, category, price, stock, warehouse):
-//   1. search_products — find products by free text, category and/or max price.
-//   2. get_stock        — stock level + warehouse for a single SKU.
-//
-// Use openDb() to query the database (see shared/src/db.ts), and let the tests
-// in test/tools.test.ts describe the exact shapes you need to return.
-
 export function searchProducts(input: { query?: string; category?: string; maxPrice?: number }): { products: any[] } {
   const db = openDb();
   const where: string[] = [];
