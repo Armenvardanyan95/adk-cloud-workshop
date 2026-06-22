@@ -146,7 +146,7 @@ gcloud storage buckets create gs://$(gcloud config get-value project)-agent-engi
 > Agent Engine needs a Cloud Storage bucket to package your agent before deploying it.
 
 **Step 4c — Deploy using the ADK CLI:**
-Update the URLs of the Cloud Run in agent.py: https://github.com/Armenvardanyan95/adk-cloud-workshop/blob/deploy/vertex-ai/deploy/agent_engine/agent.py#L29
+Update the URLs of the Cloud Run in `deploy/agent.py`
 
 ```bash
 python3 -m venv deploy/venv
